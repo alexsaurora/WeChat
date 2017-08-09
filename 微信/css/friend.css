@@ -1,0 +1,310 @@
+#friend-header{
+	height: 50px;
+	width: 100%;
+	background:#424242;	
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	
+}
+.friend-header-left{
+	height: 40px;
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 5px;
+}
+.friend-header-left img{
+	height: 30px;
+	width: 30px;
+	opacity: .8;
+}
+.freind-header-center{
+	height: 40px;
+	width: 60%;
+	display: flex;
+	flex-flow: row;
+	justify-content:flex-start;
+	align-items: center;
+	margin-left: 10px;
+	color: white;
+}
+.friend-header-right{
+	height: 40px;
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 5px;
+}
+.friend-header-right img{
+	height: 30px;
+	width: 30px;
+	opacity: .8;
+}
+#moment{
+	height: 100%;
+	width: 100%;
+	flex-grow: 1;
+	overflow: scroll;
+	
+}
+#friend-middle{
+	min-height: 300px;
+	width: 100%;
+	background:url(../img/背景.jpg) no-repeat;
+	background-size: cover;
+	background-position:center;	
+}
+#friend-myshelf{
+	width: 90%;
+	height: 70px;
+	display: flex;
+	flex-flow: row nowrap;
+    justify-content:flex-end;
+    margin: 0 auto;
+    position: relative;
+    top: 250px;
+	
+}
+.friend-myshelf-name{
+	
+
+	display: flex;
+	
+	padding-right: 20px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	align-items: center;
+	color: #F0FFFF;
+	letter-spacing: 3px;
+}
+.friend-myshelf-touxiang{
+	border: 1px solid #b6b8c3;
+	box-shadow: 0px 0px 5px whitesmoke inset;
+}
+.friend-myshelf-touxiang img{
+	height: 70px;
+	width: 70px;
+}
+#kong{
+	height: 100px;
+	width: 100%;
+	display: flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#new{
+	height: 60px;
+	width: 200px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items:center;
+	background-color: #424242;
+	color: white;
+	
+	
+	
+}
+.new-picture{
+	height: 58px;
+	width: 58px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 5px;
+}
+.new-picture img{
+	height:58px;
+	width: 58px;
+	
+}
+.new-text{
+	height: 58px;
+	width: 140px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+#dongtai{
+	height:auto;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	
+}
+#dongtai-icon{
+	height: 100%;
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+#dongtai-icon img{
+	height: 64px;
+	width: 64px;
+}
+#dongtai-neirong{
+	height: 100%;
+	width: 75%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-content: center;
+}
+.dongtai-neirong-name{
+	height: 50px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-weight: 500;
+	color: blue;
+}
+.dongtai-neirong-text{
+	min-height: 60px;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	align-content: center;
+	justify-content: flex-start;
+	
+}
+.dongtai-neirong-picture{
+	width: 100%;
+	height: 300px;
+	display: flex;
+	background-position:bottom;
+	background-size:cover;
+	background: url(../img/冰冰.jpg) no-repeat;
+}
+
+.tupianjihe{
+	width:100%;
+	height:200px;
+	display: flex;
+	flex-flow: row nowrap;
+	
+}
+.dongtai-neirong-picture2{
+	width:180px;
+	height:180px;
+	display: flex;
+	
+	
+	background: url(../img/凡凡.jpg) no-repeat;
+}
+
+.dongtai-neirong-picture3{
+	width:180px;
+	height: 180px;
+	display: flex;
+	
+	
+	
+	background: url(../img/。。。.jpg) no-repeat;
+}
+
+.dongtai-neirong-biaoji{
+	height: 30px;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	
+}
+.dongtai-neirong-biaoji img{
+	height: 30px;
+	width:30px ;
+}
+.dongtai-neirong-pinlun{
+	height:100%
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	background-color:#EEEEEE;
+	opacity: .6;
+	box-shadow: 0px 0px 1px #B6B8C3;
+	
+}
+.dianzan{
+	height: 80px;
+	width: 100%;
+	color:#424242 ;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content:flex-start;
+	align-items: center;
+	border-bottom:1px solid #424242 ;
+	
+}
+.dianzan-xin{
+	height: 32px;
+	width: 32px;
+}
+.dianzan-xin img{
+	height: 32px;
+	width: 32px;
+}
+.dianzan-people{
+	height: 32px;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+.pinlun-neirong{
+	height:100%;
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	/*align-items:flex-start;
+	justify-content:space-between;*/
+	overflow: hidden;
+	font-size: 15px;
+}
+.pinlun-hang{
+	height: 30px;
+	width: 100%;
+	display: flex;
+	
+	flex-flow: row nowrap;
+	justify-content:flex-start;
+	align-items:center;
+	padding-top: 5px;
+	/*overflow: hidden;*/
+	}
+.pinlun-name{
+  height: 26px;
+  min-width: 50px;
+  color: blue;
+  font-weight: 500;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;	
+}
+.pinlun-text{
+   height: 26px;
+   min-width: 300px;
+  color:black;
+  display: flex;
+  flex-flow: row ;
+  justify-content:flex-start;
+  align-items: center;
+  
+  }
+.pinlun-huifu{
+	height: 26px;
+	min-width: 50px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	
+}

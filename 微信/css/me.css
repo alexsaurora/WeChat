@@ -1,0 +1,59 @@
+#me {
+	height: 100%;
+	
+	background-color: whitesmoke;
+	flex-grow: 1;
+	flex-flow: column;
+	overflow-y: scroll;
+	
+}
+#me-people{
+	display: flex;
+	flex-flow: row;
+	background-color: white;
+	width: 100%;
+	margin-top: 16px;
+}
+#me-people-item{
+	width: 94%;
+	height: 64px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #EEEEEE;
+}
+.me-touxiang{
+	height: 52px;
+	width: 52px;
+}
+.me-touxiang img{
+	height: 52px;
+	width: 52px;
+	border-radius: 6px;
+}
+.ziliao{
+	flex-flow: column;
+	height: 58px;
+	padding-left: 10px;
+	width: 85%;
+}
+.name{
+	font-size: 25px;
+	font-family: "微软雅黑";
+	margin-top: 3px;
+}
+.number{
+	font-family: "宋体";
+	font-size: 15px;
+	margin-bottom: 3px;
+	color: #9E9E9E;
+}
+.erweima{
+	height: 25px;
+	width: 25px;
+}
+.erweima img{
+	height: 25px;
+	width: 25px;
+    margin-top: 19px;
+}

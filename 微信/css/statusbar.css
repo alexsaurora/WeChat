@@ -1,0 +1,107 @@
+#statusbar {
+				height: 40px;
+				width: 100%;
+				display: flex;
+				background-color: #212121;
+				justify-content: space-between;
+				color: white;
+			}
+			
+			.xinhaolan {
+				height: 36px;
+				width: 33%;
+				display: flex;
+				justify-content:flex-start;
+				align-items:flex-end;
+			}
+			
+			.xinhaolan-left{				
+				height:30px;
+				justify-content: center;
+				line-height: 40px;
+				font-size:60%;
+				color: #F0FFFF;
+				
+			}
+			
+			.xinhaolan-right {
+				height: 30px;
+				width: 35px;
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: space-between;
+				align-items: flex-end;
+				background-color: #212121;
+				margin-left: 5px;
+				margin-bottom:5px;
+			}
+			
+			.xinhaolan-right div {
+				background-color: #F0F8FF;
+			}
+			
+			.xinhaolan-right div:nth-child(1) {
+				height: 8px;
+				width: 5px;
+			}
+			
+			.xinhaolan-right div:nth-child(2) {
+				height: 13px;
+				width: 5px;
+			}
+			
+			.xinhaolan-right div:nth-child(3) {
+				height: 18px;
+				width: 5px;
+			}
+			
+			.xinhaolan-right div:nth-child(4) {
+				height: 23px;
+				width: 5px;
+			}
+			.shijianlan{
+				height: 36px;
+				width: 34%;
+				display: flex;
+				flex-flow: row;
+				align-items: center;
+				justify-content: center;
+				color: white;
+			}
+			.dianchilan{
+				height: 36px;
+				width: 33%;
+				display: flex;
+				flex-flow: row nowrap;
+				align-items: center;
+				justify-content: flex-end;
+				
+			}
+			.dianliang{
+				height: 34px;
+				display: flex;
+				flex-flow: row;
+				align-items: center;
+				justify-content: center;
+				
+			}
+			.dianchi-waike{
+				border: 2px solid white;
+				height: 18px;
+				width: 36px;
+				display: flex;
+				flex-flow: row;
+				align-items: center;
+			}
+			.dianchi-neibu{
+				height: 18px;
+				width: 30px;
+				background-color: greenyellow;
+			}
+			.zhengji{
+				height: 8px;
+				width: 6px;
+				background-color: white;
+				margin-right: 10px;
+			}
+	

@@ -1,0 +1,35 @@
+#addresslist {
+	height: 100%;
+	
+	background-color: whitesmoke;
+	flex-grow: 1;
+	flex-flow: column;
+	overflow-y: scroll;
+	
+	
+}
+.zimu{
+	width: 100%;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	text-align: left;
+   margin-left: 20px;
+   margin-top: 10px;
+	
+}
+#list{
+	height: 80%;
+	width: 20px;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	
+	flex-flow:column;
+	justify-content: space-between;
+	position: absolute;
+	top: 100px;
+	bottom: 100px;
+	right: 15px;
+	color: #424242;
+	
+	
+}

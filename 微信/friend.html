@@ -4,8 +4,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<meta name="viewport" content="width=divice-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
-		<link rel="stylesheet" type="text/css" href="css/container.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" type="text/css" href="css/container.css" />  
 		<link rel="stylesheet" type="text/css" href="css/commen.css" />
 		<link rel="stylesheet" type="text/css" href="css/statusbar.css" />
 		<link rel="stylesheet" type="text/css" href="css/header.css" />
@@ -13,7 +13,8 @@
 		<link rel="stylesheet" type="text/css" href="css/bottommenu.css" />
 		<link rel="stylesheet" type="text/css" href="css/discovery.css" />
 		<link rel="stylesheet" type="text/css" href="css/friend.css" />
-	</head>
+		<link rel="stylesheet" type="text/css" href="css/dongtai.css" />  
+	</head> 
 
 	<body>
 		<div id="container">
@@ -37,11 +38,11 @@
 				</div>
 			</div>
 			<div id="friend-header">
-				<div class="friend-header-left">
-					<a href="discovery.html"><img src="img/左箭头.png" /></a>
+				<div id="fanhui" class="friend-header-left">
+					<img src="img/左箭头.png" />
 				</div>
-				<div class="freind-header-center">朋友圈</div>
-				<div class="friend-header-right">
+				<div id="shuaxin" class="freind-header-center">朋友圈</div>
+				<div id="gonew" class="friend-header-right">
 					<img src="img/照相.png" />
 				</div>
 			</div>
@@ -62,24 +63,50 @@
 						<div class="new-text">1条新消息</div>
 					</div>
 				</div>
-				<div id="dongtai" class="">
+				<div id="dongtais">
+				   <div id="dongtai" class="">
 					<div id="dongtai-icon" class="">
 						<img src="img/聊天1范冰冰.jpg" />
 					</div>
 					<div id="dongtai-neirong" class="">
 						<div class="dongtai-neirong-name ">冰冰</div>
 						<div class="dongtai-neirong-text ">感觉腰酸背痛好累啊，谁陪我聊会天？</div>
-						<div class="dongtai-neirong-picture ">
+						<div class="dongtai-neirong-picture "></div>
+						<div id="middlezan">
+							<div id="time">
+								5小时前
+							</div>
+							<div id="middlecenter">
+								<div id="zanarea">
+									<img src="img/icon/赞area.png" />
+									<p id="zanzi">赞</p>
+								</div>
+								<div id="pinlunarea">
+									<img src="img/icon/评论内容.png" />
+									<p id="pinlunzi">评论</p>
+								</div>
+							</div>
+							<div id="middleright" class="dongtai-neirong-biaoji ">
+								<img src="img/评论.png" />
+							</div>
 						</div>
-						<div class="dongtai-neirong-biaoji ">
-							<img src="img/评论.png" />
+
+						<div id="pinluninput">
+							<div id="inputleft">
+								<input type="text" id="inputtext" />
+							</div>
+							<div id="inputcenter"></div>
+							<div id="inputright">
+								发送
+							</div>
 						</div>
+
 						<div class="dongtai-neirong-pinlun ">
 							<div class="dianzan">
 								<div class="dianzan-xin"> <img src="img/点赞.png" /></div>
-								<div class="dianzan-people"> 李晨，亦凡，黄子韬，岳云鹏，大鹏</div>
+								<div id="zanpeople" class="dianzan-people"> 李晨，亦凡，黄子韬，岳云鹏，大鹏</div>
 							</div>
-							<div class="pinlun-neirong">
+							<div id="pinlunneirong" class="pinlun-neirong">
 								<div class="pinlun-hang">
 									<div class="pinlun-name">李晨</div>
 									<div class="pinlun-text">：老婆你好美！ </div>
@@ -139,7 +166,7 @@
 					</div>
 
 				</div>
-				<div id="dongtai" class="">
+				       <div id="dongtai" class="">
 					<div id="dongtai-icon" class="">
 						<img src="img/吴亦凡.jpg" />
 					</div>
@@ -148,15 +175,28 @@
 						<div class="dongtai-neirong-text ">发现自己爱上了allblack。</div>
 						<div class="tupianjihe ">
 							<div class="dongtai-neirong-picture2 ">
-<!--								<img src="img/。。。.jpg" />
--->							</div>
+							</div>
 							<div class="dongtai-neirong-picture3 ">
-<!--								<img src="img/凡凡.jpg" />
--->							</div>
+							</div>
 						</div>
-						
-						<div class="dongtai-neirong-biaoji ">
-							<img src="img/评论.png" />
+
+						<div id="middlezan">
+							<div id="time">
+								5小时前
+							</div>
+							<div id="middlecenter">
+								<div id="zanarea">
+									<img src="img/icon/赞area.png" />
+									<p id="zanzi">赞</p>
+								</div>
+								<div id="pinlunarea">
+									<img src="img/icon/评论内容.png" />
+									<p id="pinlunzi">评论</p>
+								</div>
+							</div>
+							<div id="middleright" class="dongtai-neirong-biaoji ">
+								<img src="img/评论.png" />
+							</div>
 						</div>
 						<div class="dongtai-neirong-pinlun ">
 							<div class="dianzan">
@@ -219,8 +259,233 @@
 						</div>
 					</div>
 				</div>
+			    </div>
 			</div>
 		</div>
 	</body>
 
 </html>
+<script type="text/javascript" src="jquery/jquery.js" ></script> 
+<script type="text/javascript">
+	var zanarea = document.getElementById("zanarea");
+	var pinlunarea = document.getElementById("pinlunarea");
+	var zanpeople = document.getElementById("zanpeople");
+	var zanzi = document.getElementById("zanzi");
+	var pinluninput = document.getElementById("pinluninput");
+	var inputtext = document.getElementById("inputtext");
+	var inputright = document.getElementById("inputright");
+	var pinlunneirong = document.getElementById("pinlunneirong");
+	var middlecenter = document.getElementById("middlecenter");
+	var middleright = document.getElementById("middleright");
+	var fanhui = document.getElementById("fanhui");
+    var dongtais=document.getElementById("dongtais");
+   
+	
+   
+	
+
+	fanhui.onclick = function() {
+		window.location.href = "discovery.html";
+	}
+
+	var gonew = document.getElementById("gonew")
+	gonew.onclick = function() {
+		window.location.href = "sendfriend.html";
+	}
+	
+	
+
+		if(localStorage.length>0){ 
+		 for(var j=0;j<localStorage.length;j++){	
+		var dongtai=document.createElement("div");
+		var dongtai_icon=document.createElement("div");
+		
+		var dongtai_neirong=document.createElement("div")
+		var dongtai_neirong_name=document.createElement("div");
+		var dongtai_neirong_text=document.createElement("div");
+		var dongtai_neirong_picture=document.createElement("div");
+		
+		var middlezan=document.createElement("div");
+		var time=document.createElement("div");
+		var middlecenter=document.createElement("div");
+		var zanarea=document.createElement("div");
+		var pinlunarea=document.createElement("div");
+		var middleright=document.createElement("div");
+		
+		
+		var pinluninput=document.createElement("div");
+		var inputleft=document.createElement("div");
+		var inputtext=document.createElement("input");
+		var inputcenter=document.createElement("div");
+		var inputright=document.createElement("div");
+		
+		
+		
+		var dongtai_neirong_pinlun=document.createElement("div");
+		var dianzan=document.createElement("div");
+		var dianzan_xin=document.createElement("div");
+		var zanpeople=document.createElement("div");
+		var pinlunneirong=document.createElement("div");
+		var pinlun_hang=document.createElement("div");
+		var pinlun_name=document.createElement("div");
+		var pinlun_text=document.createElement("div");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		dongtai.className="dongtai";
+		dongtai_icon.className="dongtai_icon";
+		dongtai_neirong.className="dongtai_neirong";
+		dongtai_neirong_name.className="dongtai_neirong_name";
+		dongtai_neirong_text.className="dongtai_neirong_text";
+		dongtai_neirong_picture.className="dongtai_neirong_picture";
+		
+		middlezan.className="middlezan";
+		time.className="time";
+		middlecenter.className="middlecenter";
+		zanarea.className="zanarea";
+		pinlunarea.className="pinlunarea";
+		middleright.className="middleright";
+		
+		pinluninput.className="pinluninput";
+		inputleft.className="inputleft";
+		inputtext.className="inputtext";
+		inputcenter.className="inputcenter";
+		inputright.className="inputright";
+		
+		dongtai_neirong_pinlun.className="dongtai_neirong_pinlun";
+		dianzan.className="dianzan";
+		dianzan_xin.className="dianzan_xin";
+		zanpeople.className="zanpeople";
+		pinlunneirong.className="pinlunneirong";
+		pinlun_hang.className="pinlun_hang";
+		pinlun_name.className="pinlun_name";
+		pinlun_text.className="pinlun_text";
+		
+		
+		
+		
+		
+		dongtai_icon.innerHTML="<img src='img/吴亦凡.jpg' style='height: 64px;width: 64px;' />"
+		dongtai_neirong_name.innerHTML="亦凡";
+		time.innerHTML="刚刚";
+		zanarea.innerHTML="<img src='img/icon/赞area.png' /> 赞";
+		pinlunarea.innerHTML="<img src='img/icon/评论内容.png' /> 评论";
+		middleright.innerHTML="<img src='img/评论.png'/>";
+		inputright.innerHTML="发送";
+		dianzan_xin.innerHTML="<img src='img/点赞.png' />";
+		
+		
+		        var keyname = localStorage.key(j); 
+                var str=localStorage.getItem(keyname);
+                var dynamics =JSON.parse(str); 
+        
+		dongtai_neirong_text.innerHTML=dynamics.dytext;
+		dongtai_neirong_picture.innerHTML=dynamics.dypicture;
+		
+		dongtais.appendChild(dongtai);
+		dongtais.appendChild(dongtai).appendChild(dongtai_icon);
+		dongtais.appendChild(dongtai).appendChild(dongtai_neirong);
+		dongtais.appendChild(dongtai).appendChild(dongtai_neirong).appendChild(dongtai_neirong_name);
+		dongtais.appendChild(dongtai).appendChild(dongtai_neirong).appendChild(dongtai_neirong_text);
+		dongtais.appendChild(dongtai).appendChild(dongtai_neirong).appendChild(dongtai_neirong_picture);
+		
+		dongtais.appendChild(dongtai).appendChild(dongtai_neirong).appendChild(middlezan);
+		dongtais.appendChild(dongtai).appendChild(dongtai_neirong).appendChild(middlezan).appendChild(time);
+		dongtais.appendChild(dongtai).appendChild(dongtai_neirong).appendChild(middlezan).appendChild(middlecenter);
+		dongtais.appendChild(dongtai).appendChild(dongtai_neirong).appendChild(middlezan).appendChild(middlecenter).appendChild(zanarea);
+		dongtais.appendChild(dongtai).appendChild(dongtai_neirong).appendChild(middlezan).appendChild(middlecenter).appendChild(pinlunarea);
+		dongtais.appendChild(dongtai).appendChild(dongtai_neirong).appendChild(middlezan).appendChild(middleright);	
+	    
+	    dongtais.appendChild(dongtai).appendChild(dongtai_neirong).appendChild(pinluninput);
+	    dongtais.appendChild(dongtai).appendChild(dongtai_neirong).appendChild(pinluninput).appendChild(inputleft);
+	    dongtais.appendChild(dongtai).appendChild(dongtai_neirong).appendChild(pinluninput).appendChild(inputleft).appendChild(inputtext);
+	    dongtais.appendChild(dongtai).appendChild(dongtai_neirong).appendChild(pinluninput).appendChild(inputcenter);
+	    dongtais.appendChild(dongtai).appendChild(dongtai_neirong).appendChild(pinluninput).appendChild(inputright);
+	    
+	    
+	    dongtais.appendChild(dongtai).appendChild(dongtai_neirong).appendChild(dongtai_neirong_pinlun);
+	    dongtais.appendChild(dongtai).appendChild(dongtai_neirong).appendChild(dongtai_neirong_pinlun).appendChild(dianzan);
+	    dongtais.appendChild(dongtai).appendChild(dongtai_neirong).appendChild(dongtai_neirong_pinlun).appendChild(dianzan).appendChild(dianzan_xin);
+	    dongtais.appendChild(dongtai).appendChild(dongtai_neirong).appendChild(dongtai_neirong_pinlun).appendChild(dianzan).appendChild(zanpeople);
+	    dongtais.appendChild(dongtai).appendChild(dongtai_neirong).appendChild(dongtai_neirong_pinlun).appendChild(pinlunneirong);
+
+	   var i=true;
+	    middleright.onclick = function() {
+       if(i){
+		middlecenter.style.visibility = "visible";
+         i=false;
+       }
+       else{
+			middlecenter.style.visibility = "hidden";
+             i=true;
+		}
+	}
+
+        var a=true;
+	zanarea.onclick = function() {
+		if(a){
+		dianzan.style.visibility="visible";
+		zanpeople.innerHTML += " 亦凡";
+		zanarea.innerHTML="<img src='img/icon/赞area.png' /> 取消";
+        a=false;
+       }else{
+         	zanpeople.innerHTML = "";
+        	zanarea.innerHTML="<img src='img/icon/赞area.png' /> 赞";
+        	dianzan.style.visibility="hidden";
+        	a=true;
+        }
+	}
+    var b=true;
+    
+	pinlunarea.onclick = function() {
+		if(b){
+		pinluninput.style.visibility = "visible";
+		inputright.onclick = function() {
+			var pinlunhang1 = document.createElement("div");
+			var pinlunname1 = document.createElement("div");
+			var pinluntext1 = document.createElement("div");
+
+			pinlunhang1.className = "pinlun-hang";
+			pinlunname1.className = "pinlun-name";
+			pinluntext1.className = "pinlun-text";
+			pinlunname1.innerHTML = "亦凡  :";
+			pinluntext1.innerHTML = inputtext.value;
+
+			pinlunneirong.appendChild(pinlunhang1);
+			pinlunneirong.appendChild(pinlunhang1).appendChild(pinlunname1);
+			pinlunneirong.appendChild(pinlunhang1).appendChild(pinluntext1);
+
+			inputtext.value = null;
+      }
+		b=false;
+		}
+		else{
+				pinluninput.style.visibility = "hidden";
+				b=true;
+			}
+		
+		
+		
+		
+		
+	}
+	    
+	    
+	
+	
+	  
+	
+		 
+		 
+    }
+	}
+	
+	
+	
+</script>

@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8" />
-		<title> 微信.index</title>
+		<title> 完整微信.index</title>
 	<meta name="viewport" content="width=divice-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
 	<link rel="stylesheet" type="text/css" href="css/container.css" />
 	<link rel="stylesheet" type="text/css" href="css/commen.css" />
@@ -12,10 +12,11 @@
 	<link rel="stylesheet" type="text/css" href="css/chat.css" />
 	<link rel="stylesheet" type="text/css" href="css/bottommenu.css" />
 	<link rel="stylesheet" type="text/css" href="css/discovery.css" />
-	<link rel="stylesheet" type="text/css" href="css/menu.css" />
+	<link rel="stylesheet" type="text/css" href="css/menu.css" /> 
+	
     </head>
 	<body>
-		<div id="container" class="show-border">
+		<div id="container" class=" ">
 			<div id="statusbar">
 				<div class="xinhaolan ">
 					<div class="xinhaolan-left ">4G</div>
@@ -39,10 +40,10 @@
 				<div id="headerleft" class=""> 微信 </div>
 				<div id="headercenter" class=""></div>
 				<div id="headerright" class="">
-					<a href="index.html"><img src="img/加号.png"/></a>
+					<!--<img src="img/加号.png"/>-->
 				</div>
 			</div>
-			<div id="popup-menu">
+			<div id="popupmenu" class="menuhidden">
 						
 						<div class="pupup-menu-content">
 							<div class="pupup-menu-content-icon"><img src="img/icon/发起群聊.svg"/></div>
@@ -67,8 +68,8 @@
 					<div class="touxiang">
 						<img src="img/聊天1范冰冰.jpg" />
 					</div>
-					<div class="liaotian">
-						<div class="mingcheng">冰冰</div>
+					<div  id="bingbing" class="liaotian">
+						<div  class="mingcheng">冰冰</div>
 						<div class="neirong">黑牛今天不在，晚上来我家吧</div>
 					</div>
 					<div class="shijian">18:50</div>
@@ -165,29 +166,29 @@
 				</div>
 			</div>
 			<div id="bottommenu">
-				<div class="menu-div">
+				<div  id="index" class="menu-div">
 					<div>
 						<img class="icon " src="img/微信.png" >
 					</div>
-					<div class="font-menu "><a href="index.html">微信</a></div>
+					<div class="font-menu ">微信</div>
 				</div>
-				<div class="menu-div">
+				<div id="addresslist" class="menu-div">
 					<div>
 						<img class="icon" src="img/通讯录.png">
 					</div>
-					<div class="font-menu"><a href="addresslist.html">通讯录</a></div>
+					<div class="font-menu">通讯录</div>
 				</div>
-				<div class="menu-div">
+				<div id="discovery" class="menu-div">
 					<div>
 						<img class="icon" src="img/发现.png" >
 					</div>
-					<div class="font-menu"><a href="discovery.html">发现</a></div>
+					<div class="font-menu">发现</div>
 				</div>
-				<div class="menu-div">
+				<div id="me" class="menu-div">
 					<div>
 						<img class="icon" src="img/我.png" >
 					</div>
-					<div class="font-menu"><a href="me.html">我</a></div>
+					<div class="font-menu">我</div>
 				</div>
 
 			</div>
@@ -196,10 +197,36 @@
 
 </html>
 <!-- 引入 jQuery 库 -->
-<script type="text/javascript" src="jquery/jquery.js" ></script>
 
-<script type="text/javascript" src="js/menu-bottom.js" ></script>
+<script type="text/javascript" src="jquery/jquery.js" ></script> 
+<script type="text/javascript" src="js/跳转.js" ></script>
 
-<script type="text/javascript" src="js/menu-header-popup.js" ></script>
+<script type="text/javascript">
+	headerright.onclick=function(){
+		popupmenu.className="menublock"; 
+		
+	}
+	headerright.ondblclick=function(){
+		popupmenu.className="menuhidden"; 
+	}
 
-<script type="text/javascript" src="js/moments.js" ></script>
+//  $("#headerright").click(function(){
+//  	
+//  	$("#popupmenu").toggle();
+//  })
+	
+	
+	
+	
+	
+	
+	
+	
+	var bingbing=document.getElementById("bingbing");
+	 bingbing.onclick=function(){
+	 	 window.location.href="tulinchatframe.html";
+	 }
+	
+	
+   
+</script>

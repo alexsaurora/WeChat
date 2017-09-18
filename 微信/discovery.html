@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
+	<head> 
 		<meta charset="UTF-8">
 		<title></title>
-		<meta name="viewport" content="width=divice-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
-		<link rel="stylesheet" type="text/css" href="css/container.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<link rel="stylesheet" type="text/css" href="css/container.css" /> 
 		<link rel="stylesheet" type="text/css" href="css/commen.css" />
 		<link rel="stylesheet" type="text/css" href="css/statusbar.css" />
 		<link rel="stylesheet" type="text/css" href="css/header.css" />
@@ -15,7 +15,7 @@
 	</head>
 
 	<body>
-		<div id="container" class="show-border">
+		<div id="container" class="">
 			<div id="statusbar">
 				<div class="xinhaolan ">
 					<div class="xinhaolan-left ">4G</div>
@@ -31,7 +31,7 @@
 					<div class="dianliang">80%</div>
 					<div class="dianchi-waike">
 						<div class="dianchi-neibu"></div>
-					</div>				
+					</div>
 					<div class="zhengji"></div>
 				</div>
 			</div>
@@ -41,20 +41,16 @@
 				<div id="headerright" class=""></div>
 			</div>
 			<div id="discovery">
-				<div class="groups ">
-					<div id="moment" class="group-item">
-						<div class="group-item-left "><img src="img/朋友圈.png" /></div>
-						
-						<div class="group-item-center">
-							
-							<a href="friend.html">朋友圈</a>
-						
-						</div>
-					  
+				<div  class="groups"  >
+					<div id="moment" class="group-item ">
+						<div  class="group-item-left "><img src="img/朋友圈.png" /></div>
+
+						<div id="go" class="group-item-center "><!--<a href="friend.html">朋友圈</a>-->朋友圈</div>
+
 					</div>
 				</div>
 				<div class="middle-groups">
-					<div class="groups ">
+					<div class="groups " >
 						<div id="moment" class="group-item">
 							<div class="group-item-left "><img src="img/扫一扫.png" /></div>
 							<div class="group-item-center"> 扫一扫</div>
@@ -97,29 +93,29 @@
 			</div>
 
 			<div id="bottommenu">
-				<div class="menu-div">
+				<div id="index" class="menu-div">
 					<div>
-						<img class="icon" src="img/微信.png" style="transform: scale(1.2);">
+						<img class="icon " src="img/微信.png">
 					</div>
-					<div class="font-menu"><a href="index.html">微信</a></div>
+					<div class="font-menu ">微信</div>
 				</div>
-				<div class="menu-div">
+				<div id="addresslist" class="menu-div">
 					<div>
-						<img class="icon" src="img/通讯录.png" style="transform: scale(1.2);">
+						<img class="icon" src="img/通讯录.png">
 					</div>
-					<div class="font-menu"><a href="addresslist.html">通讯录</a></div>
+					<div class="font-menu">通讯录</div>
 				</div>
-				<div class="menu-div">
+				<div id="discovery" class="menu-div">
 					<div>
-						<img class="icon" src="img/发现.png" style="transform: scale(1.2);">
+						<img class="icon" src="img/发现.png">
 					</div>
-					<div class="font-menu"><a href="discovery.html">发现</a></div>
+					<div class="font-menu">发现</div>
 				</div>
-				<div class="menu-div">
+				<div id="me" class="menu-div">
 					<div>
-						<img class="icon" src="img/我.png" style="transform: scale(1.2);">
+						<img class="icon" src="img/我.png">
 					</div>
-					<div class="font-menu"><a href="me.html">我</a></div>
+					<div class="font-menu">我</div>
 				</div>
 
 			</div>
@@ -128,3 +124,17 @@
 	</body>
 
 </html>
+
+<script type="text/javascript" src="js/跳转.js"></script>
+<script >
+	var gofriend= document.getElementById("gofriend");
+	var go=document.getElementById("go");
+    var handercenter=document.getElementById("handercenter");
+	go.ondblclick = function() { 
+		window.location.href="friend.html";
+		
+		
+	}
+	
+	
+</script>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=divice-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="css/container.css" />
+	<link rel="stylesheet" type="text/css" href="css/commen.css" />
+	<link rel="stylesheet" type="text/css" href="css/statusbar.css" />
+	<link rel="stylesheet" type="text/css" href="css/header.css" />
+	<link rel="stylesheet" type="text/css" href="css/chat.css" />
+	<link rel="stylesheet" type="text/css" href="css/bottommenu.css" />
+	<link rel="stylesheet" type="text/css" href="css/discovery.css" />
+	<link rel="stylesheet" type="text/css" href="css/menu.css" /> 
+	<link rel="stylesheet" type="text/css" href="css/sendfriend.css" /> 
+	</head>
+	<body>
+		
+		<div id="container">
+			<div id="statusbar">
+				<div class="xinhaolan ">
+					<div class="xinhaolan-left ">4G</div>
+					<div class="xinhaolan-right">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+				<div class="shijianlan">15:30</div>
+				<div class="dianchilan">
+					<div class="dianliang">80%</div>
+					<div class="dianchi-waike">
+						<div class="dianchi-neibu"></div>
+					</div>				
+					<div class="zhengji"></div>
+				</div>
+			</div>
+		    
+		    <div id="newhead">
+		    	<div id="newheadleft"></div>
+		    	<div id="newheadright">发送</div>
+		    </div>
+		
+		    <div id="newcenter">
+		    	<div id="keyname" ></div>
+		    	<div class="newcenter1">
+		    		<textarea id="newinput"></textarea>
+		    	</div>
+		    	<div class="newcenter2">
+		    		<div id="kuang">
+		    			<input type="file" id="filepicture" multiple="multiple"/>
+		    		</div>
+		    		<div id="picturearea">
+		    		<!--<div id="putpicture"></div>-->
+		    		</div>
+		    		
+		    	</div>
+		    	<div class="newcenter3">
+		    		<img src="img/icon/位置.png" /> 所在位置
+		    	</div>
+		    </div>
+		    
+		    
+		</div>
+	</body>
+</html>
+<script>
+	
+	var filepicture=document.getElementById("filepicture");
+//	var putpicture=document.getElementById("putpicture");
+	var kuang=document.getElementById("kuang");
+	var newheadright=document.getElementById("newheadright");
+	var newheadleft=document.getElementById("newheadleft");
+	var picturearea=document.getElementById("picturearea")
+	kuang.onchange=function(){
+		
+		var putpicture=document.createElement("div");
+		var putimg=document.createElement("img");
+		putpicture.className="putpicture";
+		putimg.className="img";
+		
+		
+		if(filepicture.files && filepicture.files[0]) {
+
+					var reader = new FileReader();
+
+					reader.readAsDataURL(filepicture.files[0]);
+					//当读取完毕时
+					reader.onload = function() {
+						
+//						putpicture.innerHTML= '<img src="' + event.target.result + '" />';
+                       putimg.setAttribute('src',event.target.result);
+					}
+				}
+		picturearea.appendChild(putpicture);
+		picturearea.appendChild(putpicture).appendChild(putimg);
+		if (picturearea.childElementCount>=9) {
+			kuang.style.cssText="visibility: hidden;"
+		}
+	}
+	
+	
+	newheadleft.onclick=function(){
+		
+		window.location.href="friend.html";
+	}
+	
+	
+	
+	
+	newheadright.onclick=function(){
+		
+		 
+     
+	   save();
+	
+	window.location.href="friend.html";
+	
+	
+	}
+        function save(){
+        	var dynamics=new Object;
+
+      	    dynamics.keyname=new Date().getTime();
+        	dynamics.dytext=document.getElementById("newinput").value;
+        	dynamics.dypicture=document.getElementById("picturearea").innerHTML;
+        	var str = JSON.stringify(dynamics); // 将对象转换为字符串
+        	localStorage.setItem(dynamics.keyname,str);
+        	alert("保存成功");
+        	
+        }
+	   
+	   
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</script>

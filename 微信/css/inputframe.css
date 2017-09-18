@@ -1,0 +1,122 @@
+#top{
+	
+}
+
+
+#chatbottom{
+	height: 280px;
+	width: 100%;
+	position: fixed;
+	bottom: -230px;
+	background-color: white;
+}
+
+#choose{
+	
+}
+.hang1{
+	height: 85px;
+	width: 90%;
+	display: flex;
+	justify-content:center;
+	margin: 15px;
+	
+	
+}
+.kuai1{
+	height: 75px;
+	width: 80px;
+	margin: 5px;
+	
+	border: 1px solid gray;
+	display: flex;
+	flex-flow: column nowrap;
+	border-radius: 10px;
+	align-items: center;
+}
+.tu1{
+	height: 50px;
+	width: 50px;
+	
+}
+.tu1 img{
+	height: 50px;
+	width: 50px;
+}
+.zi1{
+	height: 25px;
+	width: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
+#inputframe{
+	height: 50px;
+	width: 100%;
+	
+	background-color: white;
+	display: flex;
+	
+	justify-content:center;
+    align-items:center;
+	/*position: fixed;*/
+	/*bottom: 0;*/
+	border: 1px solid grey;
+
+}
+
+#inputframe1{
+	height: 30px;
+	width: 30px;
+	background-image:url(../img/icon/表情.png);
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-left: 10px;
+	/*transform:translateY(50%-40px);*/
+	/*margin-top: 15px;*/
+	
+}
+#picture{
+	opacity: 0;
+	width: 0;
+}
+#inputframe2{
+	height: 40px;
+	width: 85%;
+	
+	margin-left: 10px;
+	border-bottom: 1px solid gray;
+}
+#input{
+	height: 40px;
+	width: 100%;
+	font-size: 20px;
+	
+}
+#inputframe3{
+	height: 40px;
+	width: 40px;
+	background-image:url(../img/icon/添加大.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+	background-position: center;
+	/*margin-top: 10px;*/
+}
+#inputframe4{
+	height: 40px;
+	width: 55px;
+	background-color: limegreen;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#fason{
+	color: white;
+	line-height: 40px;
+	display: flex;
+	justify-content:center;
+}

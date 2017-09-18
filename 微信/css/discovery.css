@@ -26,9 +26,9 @@
 */
 }
 
-.groups:last-child {
+/*.groups:last-child {
 	border-bottom: none;
-}
+}*/
 
 .group-item {
 	width: 94%;
@@ -42,8 +42,7 @@
 .group-item-left {
 	width: 40px;
 	height: 40px;
-	/*position: absolute;
-	left: 30px;*/
+	
 }
 
 .group-item-left img {
@@ -53,17 +52,16 @@
 }
 
 .group-item-center {
-	flex-flow: 1;
+	flex-grow: 1;
 	color: #616161;
 	font-family: "微软雅黑";
 	font-size: 14px;
 	line-height: 40px;
 	padding-left: 10px;
-	/*position: absolute;
-	left: 75px;*/
-	width: 95%;
+	
 	
 }
 .group-item-center a{
 	text-decoration: none;
+	color: black;
 }

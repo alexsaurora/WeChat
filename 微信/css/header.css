@@ -20,12 +20,20 @@
 	color: white;
 }
 #headercenter{
-	width: 40px;height: 40px;
+	width: 40px;height: 38px;
 	background-size: contain;
 	background-image: url(../img/白色搜索.png);
-	align-items: 0 auto;
+	
 }
-#headerright img{
+
+/*#headerright img{
 	width: 40px;height: 40px;
 	
+}*/
+
+#headerright{
+	margin-right: 5px;
+	width: 40px;height: 38px;
+	background-image: url(../img/加号.png);
+	background-size: contain;
 }

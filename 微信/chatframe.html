@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<meta name="viewport" content="width=divice-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="css/container.css" />
+	<link rel="stylesheet" type="text/css" href="css/commen.css" />
+	<link rel="stylesheet" type="text/css" href="css/statusbar.css" />
+	<link rel="stylesheet" type="text/css" href="css/head.css" />
+	<link rel="stylesheet" type="text/css" href="css/inputframe.css" />
+	<link rel="stylesheet" type="text/css" href="css/chatframe.css" />
+
+	<body>
+		<div id="container">
+			<div id="statusbar">
+				<div class="xinhaolan ">
+					<div class="xinhaolan-left ">4G</div>
+					<div class="xinhaolan-right">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+				<div class="shijianlan">15:30</div>
+				<div class="dianchilan">
+					<div class="dianliang">80%</div>
+					<div class="dianchi-waike">
+						<div class="dianchi-neibu"></div>
+					</div>
+					<div class="zhengji"></div>
+				</div>
+			</div>
+		
+
+		<div id="head">
+
+			<div id="headleft">
+
+			</div>
+			<div id="headmiddle" class="">
+				<p id="people">冰冰</p>
+			</div>
+			<div id="headright" class="">
+
+			</div>
+
+		</div>
+
+		<div id="chatframe">
+           <div id="otherpeople">
+           	<div id="peopleicon">
+           		
+           	</div>
+           	<div id="text">
+           		黑牛今天不在，晚上来我家吧。
+           	</div>
+           </div>
+		
+		   <!--<div id="myshelf">
+		   	<div id="mytext">
+		   		好的
+		   	</div>
+		   	<div id="myicon"></div>
+		   	
+		   </div>-->
+		
+		</div>
+		<ul id="face" class="showbordergreen">
+					<!--<li><img src="img/icon/表情/4830/4830/00.gif" /></li>-->
+					<!--<li><img src="img/icon/表情/4830/4830/01.gif" /></li>
+					<li><img src="img/icon/表情/4830/4830/02.gif" /></li>
+					<li><img src="img/icon/表情/4830/4830/03.gif" /></li>-->
+					<!--<li><img src="img/face/f5.png" /></li>
+					<li><img src="img/face/f1.png" /></li>
+					<li><img src="img/face/f1.png" /></li>
+					<li><img src="img/face/f3.png" /></li>
+					<li><img src="img/face/f4.png" /></li>
+					<li><img src="img/face/f5.png" /></li>-->
+		</ul>
+		<div id="inputframe">
+            <div id="inputframe1" class="">
+            	<input type="file" id="picture" />
+            </div>
+            <div id="inputframe2" class="">
+            <input type="text" id="input" />	
+            </div>
+            <div id="inputframe3" class="">
+            	
+            </div>
+            <div id="inputframe4" class="">
+            	<p id="fason">发送</p>
+            </div>
+		</div>
+		</div>
+	</body>
+
+</html>
+<script>
+	var container=document.getElementById("container");
+	var inputframe4=document.getElementById("inputframe4");
+	var inputframe2=document.getElementById("inputframe2");
+	var inputframe1=document.getElementById("inputframe1");
+	var chatframe=document.getElementById("chatframe");
+	var input = document.getElementById("input");
+	var picture=document.getElementById("picture");
+	inputframe4.onclick=function(){
+		createmyshelf();
+//	    chatframe.scrollTop=chatframe.scrollHeight;
+	    
+	}
+	
+	function createmyshelf(){
+		
+		var myshelf=document.createElement("div");
+		var myicon=document.createElement("div");
+		var mytext=document.createElement("div");
+		myshelf.className="myshelf1";
+		myicon.className="myicon1";
+		mytext.className="mytext1";
+		mytext.innerHTML=input.value;
+		chatframe.appendChild(myshelf);
+		chatframe.appendChild(myshelf).appendChild(mytext);
+		chatframe.appendChild(myshelf).appendChild(myicon);
+		
+		chatframe.appendChild(myshelf).scrollIntoView();
+        input.value="";
+	}
+	
+	
+	var headleft=document.getElementById("headleft");
+	headleft.onclick=function(){
+		window.location.href="复制 index.html";
+	}
+	
+	inputframe1.onchange=function(){
+		var myshelf=document.createElement("div");
+		var myicon=document.createElement("div");
+		var mytext=document.createElement("div");
+		myshelf.className="myshelf1";
+		myicon.className="myicon1";
+		mytext.className="mytext2";
+		
+		chatframe.appendChild(myshelf);
+		chatframe.appendChild(myshelf).appendChild(mytext);
+		chatframe.appendChild(myshelf).appendChild(myicon);
+		
+//		chatframe.appendChild(myshelf).scrollIntoView();
+      
+		if(picture.files && picture.files[0]) {
+
+					var reader = new FileReader();
+
+					reader.readAsDataURL(picture.files[0]);
+					//当读取完毕时
+					reader.onload = function() {
+						//文件一旦开始读取，无论成功或失败，实例的 result 属性都会被填充
+						mytext.innerHTML = '<img src="' + event.target.result + '" />';
+					}
+				}
+		
+		chatframe.scrollTop=chatframe.scrollHeight;
+	}
+	
+	
+</script>

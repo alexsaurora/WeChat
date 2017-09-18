@@ -1,4 +1,4 @@
-#popup-menu{
+#popupmenu{
 
 	height: 190px;
 	width: 140px;
@@ -48,4 +48,11 @@
 .pupup-menu-content-icon img{
 	height: 22px;
 	width: 22px;
+}
+.menublock{
+	
+	display: block;
+}
+.menuhidden{
+	visibility: hidden;
 }

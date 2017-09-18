@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+	<link rel="stylesheet" type="text/css" href="css/container.css" />
+	<link rel="stylesheet" type="text/css" href="css/commen.css" />
+	<link rel="stylesheet" type="text/css" href="css/statusbar.css" /> 
+	<link rel="stylesheet" type="text/css" href="css/head.css" />
+	<link rel="stylesheet" type="text/css" href="css/inputframe.css" />
+	<link rel="stylesheet" type="text/css" href="css/chatframe.css" />  
+
+	<body>
+		<div id="container">
+			
+			<div id="top">
+			<div id="statusbar">
+				<div class="xinhaolan ">
+					<div class="xinhaolan-left ">4G</div>
+					<div class="xinhaolan-right">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+				<div class="shijianlan">15:30</div>
+				<div class="dianchilan">
+					<div class="dianliang">80%</div>
+					<div class="dianchi-waike">
+						<div class="dianchi-neibu"></div>
+					</div>
+					<div class="zhengji"></div>
+				</div>
+			</div>
+		
+
+		<div id="head">
+
+			<div id="headleft">
+              
+			</div>
+			<div id="headmiddle" class="">
+				冰冰
+			</div>
+			<div id="headright" class="">
+
+			</div>
+
+		</div>
+		</div> 
+
+		<div id="chatframe">
+           <!--<div id="otherpeople">
+           	<div id="peopleicon">
+           		
+           	</div>
+           	<div id="text">
+           		黑牛今天不在，晚上来我家吧。
+           	</div>
+           </div>-->
+		
+		   <!--<div id="myshelf">
+		   	<div id="mytext">
+		   		好的
+		   	</div>
+		   	<div id="myicon"></div>
+		   	
+		   </div>-->
+		
+		</div>
+		<div id="chatbottom">
+		  <div id="inputframe">
+            <div id="inputframe1" class="">
+            	<input type="file" id="picture" />
+            </div>
+            <div id="inputframe2" class="">
+            <input type="text" id="input" />	
+            </div>
+            <div id="inputframe3" class="">
+            	
+            </div>
+            <div id="inputframe4" class="">
+            	<p id="fason">发送</p>
+            </div>
+		</div>
+		
+		  <div id="choose">
+		  	
+		  	<div class="hang1">
+		  		<div class="kuai1">
+		  			<div class="tu1"><img src="img/bottom/相册淡淡.png"/></div>
+		  			<div class="zi1">相册</div>
+		  		</div>
+		  		<div class="kuai1">
+		  			<div class="tu1"><img src="img/bottom/拍摄.png"/></div>
+		  			<div class="zi1">拍摄</div>
+		  		</div>
+		  		<div class="kuai1">
+		  			<div class="tu1"><img src="img/bottom/视频.png"/></div>
+		  			<div class="zi1">视频</div>
+		  		</div>
+		  		<div class="kuai1">
+		  			<div id="weizhi"  class="tu1"><img src="img/icon/位置.png"/></div>
+		  			<div class="zi1">位置</div>
+		  		</div>
+		  	</div>
+
+		  	<div class="hang1">
+		  		<div class="kuai1">
+		  			<div class="tu1"><img src="img/bottom/红包.png"/></div>
+		  			<div class="zi1">红包</div>
+		  		</div>
+		  		<div class="kuai1">
+		  			<div class="tu1"><img src="img/bottom/转账.png"/></div>
+		  			<div class="zi1">转账</div>
+		  		</div>
+		  		<div class="kuai1">
+		  			<div class="tu1"><img src="img/bottom/语音输入.png"/></div>
+		  			<div class="zi1">语音</div>
+		  		</div>
+		  		<div class="kuai1">
+		  			<div class="tu1"><img src="img/bottom/人像黑.png"/></div>
+		  			<div class="zi1">名片</div>
+		  		</div>
+		  	</div>
+		  	
+		  	
+		  
+		  
+		  
+		  
+		  
+		  
+		  </div>
+		</div>
+		</div>
+		
+		
+		
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=9llbPuyr5xIGg7TDGAZjQiPH1dAVAZzL"></script>
+<script type="text/javascript" src="jquery/jquery.js" ></script>
+<script>
+	var container=document.getElementById("container");
+	var inputframe4=document.getElementById("inputframe4");
+	var inputframe2=document.getElementById("inputframe2");
+	var inputframe1=document.getElementById("inputframe1");
+	var inputframe3=document.getElementById("inputframe3");
+	var chatframe=document.getElementById("chatframe");
+	var inputframe=document.getElementById("inputframe");
+	var input = document.getElementById("input");
+	var picture=document.getElementById("picture");
+
+	
+	function createmyshelf(){
+		
+		var myshelf=document.createElement("div");
+		var myicon=document.createElement("div");
+		var mytext=document.createElement("div");
+		myshelf.className="myshelf1";
+		myicon.className="myicon1";
+		mytext.className="mytext1";
+		mytext.innerHTML=input.value;
+		chatframe.appendChild(myshelf);
+		chatframe.appendChild(myshelf).appendChild(mytext);
+		chatframe.appendChild(myshelf).appendChild(myicon);
+		
+		chatframe.appendChild(myshelf).scrollIntoView();
+        input.value="";
+ }       
+        
+        $(function() {    
+
+		var key = "de3693d543cf4a12b464d01f83bbdee9";
+		var url = "http://www.tuling123.com/openapi/api";
+
+		$("#inputframe4").click(function() {
+			
+			var info = {
+				"key": key,
+				"info": $("#input").val()   // = content.value
+			}
+			
+         createmyshelf();
+           
+			
+
+			$.ajax({
+				 type: "POST",
+				url: url,
+				data: info,
+				dataType: "json",
+				success: function(result) {
+					var robot = $("<div class='otherpeople '></div>")
+					var roboticon=$("<div class='peopleicon'></div>")
+					var robottext=$("<div class='text '></div>")
+					robottext.html(result.text) 
+					$("#chatframe").append(robot)
+					robot.append(roboticon)
+					robot.append(robottext)
+					
+					chatframe.scrollTop=chatframe.scrollHeight;
+				
+				}
+			});
+			
+		
+           
+            
+		})
+
+	})
+	
+	
+	
+	var headleft=document.getElementById("headleft");
+	headleft.onclick=function(){
+		window.location.href="复制 index.html";
+	}
+	
+	inputframe1.onchange=function(){
+		var myshelf=document.createElement("div");
+		var myicon=document.createElement("div");
+		var mytext=document.createElement("div");
+		myshelf.className="myshelf1";
+		myicon.className="myicon1";
+		mytext.className="mytext2";
+		
+		chatframe.appendChild(myshelf);
+		chatframe.appendChild(myshelf).appendChild(mytext);
+		chatframe.appendChild(myshelf).appendChild(myicon);
+//		chatframe.appendChild(myshelf).scrollIntoView();
+
+      
+		if(picture.files && picture.files[0]) {
+
+					var reader = new FileReader();
+
+					reader.readAsDataURL(picture.files[0]);
+					//当读取完毕时
+					reader.onload = function() {
+						//文件一旦开始读取，无论成功或失败，实例的 result 属性都会被填充
+						mytext.innerHTML = '<img src="' + event.target.result + '" />';
+					}
+				}
+		
+		chatframe.scrollTop=chatframe.scrollHeight;
+			
+	}
+	
+	
+	
+	var oth=true;
+	$("#inputframe3").click(function(){
+		$("#chatframe").click(function(){
+			
+			$("#chatbottom").animate({bottom:'-230px'},500)
+               $("#chatframe").css("margin-bottom","50px")
+		})
+		if (oth) {
+			$("#chatbottom").animate({bottom:'0px'},500)
+			$("#chatframe").css("margin-bottom","280px")
+		}else{
+			
+			$("#chatbottom").animate({bottom:'-230px'},500)
+             $("#chatframe").css("margin-bottom","50px")
+			oth=true;
+		}
+		
+		
+		
+	})
+	
+	var weizhi = document.getElementById("weizhi");
+	// 百度地图API功能
+	weizhi.onclick=function(){
+		var myshelf=document.createElement("div");
+		var myicon=document.createElement("div");
+		var mytext=document.createElement("div");
+		mytext.setAttribute('id','ooo')
+		myshelf.className="myshelf1";
+		myicon.className="myicon1";
+		mytext.className="mytext1";
+		mytext.style.cssText="height: 200px;width: 100px;" 
+		
+		chatframe.appendChild(myshelf);
+		chatframe.appendChild(myshelf).appendChild(mytext);
+		chatframe.appendChild(myshelf).appendChild(myicon);
+		
+		
+		
+		
+		
+		
+		
+		
+	var map = new BMap.Map("ooo"); // 创建Map实例
+	map.centerAndZoom(new BMap.Point(117.410011,39.14479),20); // 初始化地图,设置中心点坐标和地图级别
+	map.addControl(new BMap.MapTypeControl()); //添加地图类型控件
+	map.setCurrentCity("天津"); // 设置地图显示的城市 此项是必须设置的
+	map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
+	}
+</script>

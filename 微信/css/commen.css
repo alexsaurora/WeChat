@@ -16,3 +16,6 @@
 .show-border-green{
 	border:1px dashed green;
 }
+::-webkit-scrollbar{
+	display: none;
+}

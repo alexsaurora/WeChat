@@ -1,4 +1,4 @@
-#friend-header{
+ #friend-header{
 	height: 50px;
 	width: 100%;
 	background:#424242;	
@@ -130,6 +130,13 @@
 	justify-content: center;
 	align-items: center;
 }
+#dongtais{
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-flow: column-reverse;
+	
+}
 #dongtai{
 	height:auto;
 	width: 100%;
@@ -203,17 +210,57 @@
 	width:180px;
 	height: 180px;
 	display: flex;
-	
-	
-	
 	background: url(../img/。。。.jpg) no-repeat;
 }
-
-.dongtai-neirong-biaoji{
+#middlezan{
 	height: 30px;
 	width: 100%;
 	display: flex;
 	flex-flow: row nowrap;
+}
+#time{
+	height: 30px;
+	width: 60%;
+	color: grey;
+	font-weight: 300;
+	line-height: 30px;
+}
+#middlecenter{
+	height: 30px;
+	width: 160px;
+	display: flex;
+	flex-flow: row nowrap;
+	background-color:#424242 ; 
+	visibility: hidden;
+}
+#zanarea{
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+	color: white;
+	padding-left: 10px;
+}
+#zanarea img{
+	width: 30px;
+	height: 30px;
+}
+#pinlunarea{
+	display: flex;
+	justify-content:flex-end;
+	align-items: center;
+	color: white;
+	padding-left: 10px;
+	
+}
+#pinlunarea img{
+	width: 30px;
+	height: 30px;
+}
+
+.dongtai-neirong-biaoji{
+	height: 30px;
+	width: 40px;
+	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	
@@ -308,3 +355,42 @@
 	color: black;
 	
 }
+
+
+#pinluninput{
+	height: 30px;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	visibility: hidden;
+}
+#inputleft{
+	height: 30px;
+	width: 70%;
+	margin-left: 5px;
+}
+#inputtext{
+	height: 30px;
+	width: 100%;
+	border-bottom: 1px solid limegreen;
+	font-size: 20px;
+}
+#inputcenter{
+	height: 30px;
+	width: 30px;
+	background-image: url(../img/icon/表情.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+}
+#inputright{
+	height: 30px;
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 10px;
+	background-color: limegreen;
+	color: white;
+}
+

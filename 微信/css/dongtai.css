@@ -1,0 +1,244 @@
+.dongtai{
+	height:auto;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	
+}
+.dongtai_icon{
+	height: 100%;
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.dongtai_icon img{
+	height: 64px;
+	width: 64px;
+	
+}
+.dongtai_neirong{
+	height: 100%;
+	width: 75%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-content: center;
+}
+.dongtai_neirong_name{
+	height: 50px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-weight: 500;
+	color: blue;
+}
+.dongtai_neirong_text{
+	min-height: 60px;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	align-content: center;
+	justify-content: flex-start;
+	
+}
+.dongtai_neirong_picture{
+	height: 280px;
+	width: 280px;
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	/*overflow: hidden;*/
+	
+	
+}
+.dongtai_neirong_picture img{
+	height:80px;
+	width: 80px;
+	margin: 5px;
+}
+
+.middlezan{
+	height: 30px;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	/*margin-top: 30px;*/
+	/*border: 1px solid red;*/
+}
+.time{
+	height: 30px;
+	width: 50%;
+	color: grey;
+	font-weight: 300;
+	line-height: 30px;
+}
+.middlecenter{
+	height: 30px;
+	width: 160px;
+	display: flex;
+	flex-flow: row nowrap;
+	background-color:#424242 ; 
+	visibility: hidden;
+}
+.zanarea{
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+	color: white;
+	padding-left: 10px;
+}
+.zanarea img{
+	width: 30px;
+	height: 30px;
+}
+.pinlunarea{
+	display: flex;
+	justify-content:flex-end;
+	align-items: center;
+	color: white;
+	padding-left: 10px;
+	
+}
+.pinlunarea img{
+	width: 30px;
+	height: 30px;
+}
+
+.middleright{
+	height: 30px;
+	width: 40px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	/*border: 1px solid green;*/
+	
+}
+.middleright img{
+	height: 30px;
+	width:30px ;
+}
+
+.pinluninput{
+	height: 30px;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	visibility: hidden;
+	/*border: 1px solid red;*/
+}
+.inputleft{
+	height: 30px;
+	width: 70%;
+	
+}
+.inputtext{
+	height: 30px;
+	width: 100%;
+	border-bottom: 1px solid limegreen;
+	font-size: 20px;
+}
+.inputcenter{
+	height: 30px;
+	width: 30px;
+	background-image: url(../img/icon/表情.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+}
+.inputright{
+	height: 30px;
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 10px;
+	background-color: limegreen;
+	color: white;
+}
+
+.dongtai_neirong_pinlun{
+	height:100%
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	background-color:#EEEEEE;
+	opacity: .6;
+	box-shadow: 0px 0px 1px #B6B8C3;
+	
+}
+.dianzan{
+	height: 40px;
+	width: 100%;
+	color:#424242 ;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content:flex-start;
+	align-items: center;
+	border-bottom:1px solid #424242 ;
+	/*visibility: hidden;*/
+}
+.dianzan_xin{
+	height: 32px;
+	width: 32px;
+}
+.dianzan_xin img{
+	height: 32px;
+	width: 32px;
+}
+.zanpeople{
+	height: 32px;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+.pinlunneirong{
+	height:100%;
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	overflow: hidden;
+	font-size: 15px;
+}
+.pinlun_hang{
+	height: 30px;
+	width: 100%;
+	display: flex;
+	
+	flex-flow: row nowrap;
+	justify-content:flex-start;
+	align-items:center;
+	padding-top: 5px;
+	/*overflow: hidden;*/
+	}
+.pinlun_name{
+  height: 26px;
+  min-width: 50px;
+  color: blue;
+  font-weight: 500;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;	
+}
+.pinlun_text{
+   height: 26px;
+   min-width: 300px;
+  color:black;
+  display: flex;
+  flex-flow: row ;
+  justify-content:flex-start;
+  align-items: center;
+  
+  }
+.pinlun_huifu{
+	height: 26px;
+	min-width: 50px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	
+}
